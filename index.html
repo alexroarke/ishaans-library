@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="bg-modal">
+            <div class="modal-content">
+                <form class="modal-form" action="">
+                    <h2 class="modal-dialouge">Add a new book</h2>
+                    <input class="modal-input" id="book" type="text" placeholder="Title" required>
+                    <input class="modal-input" id="pages" type="number" placeholder="Pages" required>
+                    <input class="modal-input" id="author" type="text" placeholder="Author" required>
+                    <div class="isRead">
+                        <label for="readingStatus">Have you read it?</label>
+                        <input class="modal-checkbox" type="checkbox" name="readingStatus" id="isRead" value="read">
+                    </div>
+                    <button class="modal-form-btn" type="submit">New Book</button>
+                </form>
+            </div>
+        </div>
+        <header>
+            <div class="nav">
+                <h1 id="library">Ishaan's Library</h1>
+                <button id="login-btn" >Login</button>
+            </div>
+            <div class="new-book">
+                <button class="new-book-btn">Add Book</button>
+            </div>
+        </header>
+
+
+        <div class="books-container">
+            <div class="book">
+                <!-- <img class="book-cover" src="https://images-na.ssl-images-amazon.com/images/I/910ityjoncL.jpg" alt=""> -->
+                <div class="book-metadata">
+                    <h2 class="book-title" >Harry Potter and the Philosopher's Stone</h2>
+                    <p class="book-author"> by J.K. Rowling</p>
+                    <p class="book-pages" >380 pages</p>
+                    <p class="book-reading-status read" >Read</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

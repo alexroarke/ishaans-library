@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #474b44;
+}
+
+body {
+  font-family: "Bebas Neue", cursive;
+  color: #474b44;
+  letter-spacing: 1px;
+  background-color: #fefdec;
+  /* background-color: crimson; */
+}
+
+.nav {
+  padding: 30px;
+  background-color: #fdfbd8;
+  border-bottom: 1px solid #5a53530e;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#login-btn {
+  padding: 10px 30px;
+  font-size: 25px;
+  background-color: rgb(127, 255, 148);
+  border: 2px solid #474b44;
+  border-radius: 5px;
+}
+
+#library {
+  font-size: 64px;
+}
+
+.bg-modal {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  transition: 200ms opacity;
+}
+
+.bg-modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-content {
+  height: 600px;
+  width: 400px;
+  background-color: aliceblue;
+  padding: 40px;
+  border-radius: 5px;
+  transform: scale(0);
+  transition: 200ms transform;
+}
+
+.bg-modal.active .modal-content {
+  transform: scale(1);
+}
+
+.modal-form {
+  /* margin-top: 10px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  border-radius: 5px;
+  justify-content: space-evenly;
+}
+
+.modal-dialouge {
+  font-size: 55px;
+}
+
+.modal-input {
+  width: 90%;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.modal-form-btn {
+  padding: 5px 10px;
+  background-color: yellow;
+  font-size: 30px;
+  border-radius: 5px;
+  font-family: "Bebas Neue", cursive;
+  color: #474b44;
+  border: 2px solid #474b44;
+}
+
+.isRead {
+  display: flex;
+  gap: 20px;
+  font-size: 30px;
+  align-items: center;
+}
+
+.modal-checkbox {
+  width: 25px;
+  height: 25px;
+}
+
+.books-container {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
+}
+
+.book {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  /* width: 100%; */
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.book-cover {
+  height: 200px;
+  border-radius: 5px 0 0 5px;
+}
+
+.book-metadata {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  font-size: 30px;
+  padding: 10px;
+  gap: 15px;
+}
+
+.book-reading-status {
+  font-size: 20px;
+  padding: 10px 30px;
+  color: white;
+  /* background-color: rgb(27, 172, 76); */
+  border-radius: 5px;
+  letter-spacing: 2px;
+}
+
+.book-reading-status.read {
+  background-color: rgb(27, 172, 76);
+}
+
+.book-reading-status.not-read {
+    background-color: rgb(172, 27, 27);
+}
+  
+
+.new-book-btn {
+  font-size: 30px;
+  color: white;
+  background-color: #eeb868;
+  border: 2px solid #5a53530e;
+
+  border-radius: 5px;
+  padding: 10px 30px;
+}
+
+.new-book {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
